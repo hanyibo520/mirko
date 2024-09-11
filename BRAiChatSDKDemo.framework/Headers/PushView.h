@@ -6,7 +6,7 @@
 //
 
 #import <UIKit/UIKit.h>
-#import <FrameWorkDemo/UIView+YYadd.h>
+
 NS_ASSUME_NONNULL_BEGIN
 
 @interface PushView : UIView

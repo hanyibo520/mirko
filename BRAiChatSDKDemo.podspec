@@ -1,5 +1,5 @@
 #
-#  Be sure to run `pod spec lint FrameWorkDemo.podspec' to ensure this is a
+#  Be sure to run `pod spec lint BRAiChatSDKDemo.podspec' to ensure this is a
 #  valid spec and to remove all comments including this before submitting the spec.
 #
 #  To learn more about Podspec attributes see https://guides.cocoapods.org/syntax/podspec.html
@@ -15,18 +15,18 @@ Pod::Spec.new do |spec|
   #  summary should be tweet-length, and the description more in depth.
   #
 
-  spec.name         = "Mirko"
+  spec.name         = "BRAiChatSDKDemo"
   spec.version      = "0.0.1"
-  spec.summary      = "A short description of Mirko."
+  spec.summary      = "A short description of BRAiChatSDKDemo."
 
   # This description is used to generate tags and improve search results.
   #   * Think: What does it do? Why did you write it? What is the focus?
   #   * Try to keep it short, snappy and to the point.
   #   * Write the description between the DESC delimiters below.
   #   * Finally, don't worry about the indent, CocoaPods strips it!
-  spec.description  = "Detailed description of Mirko"
+  spec.description  = "Detailed description of BRAiChatSDKDemo"
 
-  spec.homepage     = "https://github.com/hanyibo520"
+  spec.homepage     = "http://github.com/hanyibo520"
   # spec.screenshots  = "www.example.com/screenshots_1.gif", "www.example.com/screenshots_2.gif"
 
 
@@ -79,7 +79,7 @@ Pod::Spec.new do |spec|
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  spec.source       = { :git => "git@github.com:hanyibo520/Mirko.git", :tag => "main" }
+  spec.source       = { :git => "git@github.com:hanyibo520/mirko.git", :tag => "#{spec.version}" }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -90,11 +90,8 @@ Pod::Spec.new do |spec|
   #  Not including the public_header_files will make all headers public.
   #
 
-  # spec.source_files  = "FrameWorkDemo", "FrameWorkDemo/**/*.{h,m}"
+  # spec.source_files  = "Classes", "Classes/**/*.{h,m}"
   # spec.exclude_files = "Classes/Exclude"
-  spec.dependency "AFNetworking", "~>4.0.1"
-
-
 
   # spec.public_header_files = "Classes/**/*.h"
 
@@ -133,6 +130,7 @@ Pod::Spec.new do |spec|
   #  you can include multiple dependencies to ensure it works.
 
   spec.requires_arc = true
+  spec.dependency "AFNetworking", "~>4.0.1"
 
   # spec.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }
   # spec.dependency "JSONKit", "~> 1.4"
